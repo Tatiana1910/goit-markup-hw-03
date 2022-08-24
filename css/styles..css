@@ -1,0 +1,243 @@
+:root {
+  /*Fonts*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* Text colors*/
+  --main-txt-cl: #212121;
+  --light-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --white-txt-cl: #ffffff;
+
+  /*Background  colors*/
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  --white-bg-cl: #ffffff;
+
+  /*other*/
+  --light1-cl: #eeeeee;
+  --light2-cl: #ececec;
+  --black-cl: #000000;
+  --transparent-white-cl: rgba(255, 255, 255, 0.6);
+}
+
+/*Хедер*/
+
+body {
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+  background-color: var(--white-bg-cl);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+  color: #000000;
+}
+.logo span {
+  color: var(--accent-txt-cl);
+}
+
+.nav-item {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.list .current {
+  color: var(--accent-txt-cl);
+}
+
+.nav-contact {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--light-txt-cl);
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/*замовити послугу*/
+.title {
+  background-color: var(--dark-bg-cl);
+}
+.title-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.btn {
+  background-color: var(--accent-txt-cl);
+  color: var(--white-txt-cl);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+}
+
+/*особливості*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitle {
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.text {
+  line-height: calc(24 / 14);
+  color: var(--light-txt-cl);
+}
+
+/*чим ми займаємось*/
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--main-txt-cl);
+}
+
+/*Наша команда*/
+
+.team {
+  background-color: var(--light-bg-cl);
+}
+
+.person {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--main-txt-cl);
+}
+
+.person-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+.persone-title {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--light-txt-cl);
+}
+/*Футер*/
+.footer .logo {
+  color: var(--white-txt-cl);
+}
+.footer .logo .span {
+  color: var(--accent-txt-cl);
+}
+
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  line-height: calc(24 / 14);
+  color: var(--transparent-white-cl);
+}
+.contact .adres {
+  color: var(--white-txt-cl);
+}
+
+.contact {
+  list-style: none;
+}
+
+/*портфоліо-фільтр*/
+
+.radio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+}
+
+/*Портфоліо
+*/
+.project-name {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-txt-cl);
+}
+
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--light-txt-cl);
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--light-bg-cl);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--main-txt-cl);
+  font-family: inherit;
+  letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+.picture {
+  text-decoration: none;
+}
