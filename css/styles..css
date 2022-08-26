@@ -384,6 +384,8 @@ p {
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
+  background: var(--white-bg-cl);
+  border: 1px solid #eeeeee;
 }
 
 .picture {
