@@ -52,7 +52,7 @@ p {
   padding-left: 0;
 }
 
-img {
+.img {
   display: block;
   width: 100%;
   height: auto;
@@ -295,6 +295,14 @@ img {
   margin-bottom: 30px;
 }
 
+.our-team {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /**
   |============================
   | Footer
@@ -306,6 +314,10 @@ img {
 }
 .footer .logo .span {
   color: var(--accent-txt-cl);
+}
+
+.logo-header {
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -321,6 +333,10 @@ img {
 
 .address {
   font-style: normal;
+}
+
+.address-item:not(:last-child) {
+  padding-bottom: 10 px;
 }
 
 .footer .link:hover,
@@ -351,14 +367,29 @@ img {
 
 /*------------------портфоліо-фільтр--------------*/
 
-.radio-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
+/*-----------------Портфоліо----------------*/
+
+.portfolio-button {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 34px;
+  justify-content: center;
 }
 
-/*Портфоліо
-*/
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.picture {
+  text-decoration: none;
+}
+
 .project-name {
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -389,14 +420,11 @@ img {
 .button {
   display: block;
   margin: 0 auto;
+  padding: 6px, 22px;
 }
 
 .button:hover,
 .button:focus {
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
-}
-
-.picture {
-  text-decoration: none;
 }
