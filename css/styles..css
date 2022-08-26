@@ -20,9 +20,11 @@
   --transparent-white-cl: rgba(255, 255, 255, 0.6);
 }
 
-
-
-
+/**
+  |============================
+  | Header
+  |============================
+*/
 
 /*Хедер*/
 
@@ -34,15 +36,79 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-header {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.list-header {
+  display: flex;
+  margin-left: 95px;
+}
+
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
+  background-color: teal;
+}
+
+.nav-contact-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
+  background-color: teal;
+}
+
+.nav-contact-header .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
+  background-color: rebeccapurple;
+}
+
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-txt-cl);
 }
 
-.logo {
+.logo-header {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -51,33 +117,40 @@ ul {
   text-decoration: none;
   color: #000000;
 }
-.logo span {
+.logo-header span {
   color: var(--accent-txt-cl);
 }
 
-.nav-item {
+.nav-item-header {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
 
-.list .current {
+.list-header .current {
   color: var(--accent-txt-cl);
 }
 
-.nav-contact {
+.nav-contact-header {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--light-txt-cl);
 }
+
 .link {
   text-decoration: none;
   color: currentColor;
 }
 
-/*замовити послугу*/
+/**
+  |============================
+  | Main
+  |============================
+*/
+
+/*-------------------замовити послугу---------------*/
 .title {
   background-color: var(--dark-bg-cl);
 }
@@ -106,7 +179,7 @@ ul {
   border: none;
 }
 
-/*особливості*/
+/*------------------особливості-------------------------*/
 
 .visually-hidden {
   position: absolute;
@@ -142,7 +215,7 @@ ul {
   color: var(--main-txt-cl);
 }
 
-/*Наша команда*/
+/*----------------Наша команда---------------------*/
 
 .team {
   background-color: var(--light-bg-cl);
@@ -167,8 +240,14 @@ ul {
   text-align: center;
   color: var(--light-txt-cl);
 }
-/*Футер*/
-.footer .logo {
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
+.footer .logo-header {
   color: var(--white-txt-cl);
 }
 .footer .logo .span {
@@ -198,7 +277,14 @@ ul {
   list-style: none;
 }
 
-/*портфоліо-фільтр*/
+/**
+  |============================
+  | Portfolio
+
+  |============================
+*/
+
+/*------------------портфоліо-фільтр--------------*/
 
 .radio-button {
   font-weight: 500;
