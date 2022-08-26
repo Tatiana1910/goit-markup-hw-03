@@ -46,8 +46,23 @@ p {
   margin: 0;
 }
 
-ul {
+.list {
   list-style: none;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.address {
+  font-style: normal;
 }
 
 .container {
@@ -76,7 +91,7 @@ ul {
 }
 
 .header-link {
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-right: 50px;
@@ -89,11 +104,10 @@ ul {
 }
 
 .nav-link {
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-right: 50px;
-  background-color: teal;
 }
 
 .nav-contact-header .link {
@@ -150,10 +164,20 @@ ul {
   |============================
 */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*-------------------замовити послугу---------------*/
 .title {
   background-color: var(--dark-bg-cl);
 }
+.title-container {
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
 .title-text {
   font-weight: 900;
   font-size: 44px;
@@ -162,6 +186,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-txt-cl);
+}
+
+.title-text {
+  margin-bottom: 40px;
 }
 
 .btn {
@@ -179,6 +207,13 @@ ul {
   border: none;
 }
 
+.btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
 /*------------------особливості-------------------------*/
 
 .visually-hidden {
@@ -193,6 +228,10 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.benefits-container {
+  display: flex;
 }
 
 .subtitle {
