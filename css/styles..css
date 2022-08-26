@@ -165,9 +165,6 @@ img {
 /*-------------------замовити послугу---------------*/
 .title {
   background-color: var(--dark-bg-cl);
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1600px;
 }
 .title-container {
   padding-top: 200px;
