@@ -48,21 +48,14 @@ p {
 
 .list {
   list-style: none;
-}
-
-.list {
   margin: 0;
   padding-left: 0;
 }
 
-.img {
+img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.address {
-  font-style: normal;
 }
 
 .container {
@@ -172,6 +165,9 @@ p {
 /*-------------------замовити послугу---------------*/
 .title {
   background-color: var(--dark-bg-cl);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
 }
 .title-container {
   padding-top: 200px;
@@ -207,7 +203,8 @@ p {
   border: none;
 }
 
-.btn {
+.btn,
+.button {
   display: block;
   margin: 0 auto;
   border-radius: 4px;
@@ -232,12 +229,14 @@ p {
 
 .benefits-container {
   display: flex;
+  gap: 30px;
 }
 
 .subtitle {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .text {
@@ -245,13 +244,20 @@ p {
   color: var(--light-txt-cl);
 }
 
-/*чим ми займаємось*/
+/*-----------------чим ми займаємось-----------*/
 
 .heading {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--main-txt-cl);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.heading-list {
+  display: flex;
+  gap: 30px;
 }
 
 /*----------------Наша команда---------------------*/
@@ -265,6 +271,13 @@ p {
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--main-txt-cl);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.person-list {
+  display: flex;
+  gap: 30px;
 }
 
 .person-name {
@@ -272,12 +285,17 @@ p {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  margin-bottom: 10px;
 }
 .persone-title {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--light-txt-cl);
+}
+
+.person-photo {
+  margin-bottom: 30px;
 }
 
 /**
@@ -295,6 +313,17 @@ p {
 
 .footer {
   background-color: var(--dark-bg-cl);
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.address {
+  font-style: normal;
 }
 
 .footer .link:hover,
@@ -359,6 +388,10 @@ p {
   color: var(--main-txt-cl);
   font-family: inherit;
   letter-spacing: 0.03em;
+}
+.button {
+  display: block;
+  margin: 0 auto;
 }
 
 .button:hover,
