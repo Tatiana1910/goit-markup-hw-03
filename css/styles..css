@@ -46,16 +46,24 @@ p {
   margin: 0;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.img {
+img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -64,8 +72,20 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/*--------------------------------------------------------------*/
 
 .header-container {
   display: flex;
@@ -75,39 +95,49 @@ p {
 .nav-item-header {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
 }
 
 .list-header {
   display: flex;
-  margin-left: 95px;
+  margin-left: 93px;
+  column-gap: 50px;
+}
+
+.list-header .current {
+  color: var(--accent-txt-cl);
 }
 
 .header-link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-right: 50px;
-  background-color: teal;
 }
 
 .nav-contact-header {
   display: flex;
   margin-left: auto;
+  color: var(--light-txt-cl);
+  column-gap: 50px;
+}
+
+.nav-contact-header .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--light-txt-cl);
 }
 
 .nav-link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-right: 50px;
-}
-
-.nav-contact-header .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 50px;
-  background-color: rebeccapurple;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .header .link:hover,
@@ -128,47 +158,17 @@ p {
   color: var(--accent-txt-cl);
 }
 
-.nav-item-header {
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--main-txt-cl);
-}
-
-.list-header .current {
-  color: var(--accent-txt-cl);
-}
-
-.nav-contact-header {
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--light-txt-cl);
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
 /**
   |============================
   | Main
   |============================
 */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /*-------------------замовити послугу---------------*/
+
 .title {
   background-color: var(--dark-bg-cl);
-}
-.title-container {
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding: 200px 0;
 }
 
 .title-text {
@@ -179,10 +179,9 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-txt-cl);
-}
-
-.title-text {
-  margin-bottom: 40px;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -197,15 +196,8 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border: none;
-}
-
-.btn,
-.button {
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
   padding: 10px 32px;
+  margin: 0 auto;
 }
 
 /*------------------особливості-------------------------*/
@@ -243,6 +235,10 @@ p {
 
 /*-----------------чим ми займаємось-----------*/
 
+.our-activities {
+  padding-top: 0;
+}
+
 .heading {
   font-weight: 700;
   font-size: 36px;
@@ -277,6 +273,11 @@ p {
   gap: 30px;
 }
 
+.person-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .person-name {
   font-weight: 500;
   font-size: 16px;
@@ -291,13 +292,9 @@ p {
   color: var(--light-txt-cl);
 }
 
-.person-photo {
-  margin-bottom: 30px;
-}
-
 .our-team {
   width: 270px;
-  background: #ffffff;
+  background-color: var(--white-bg-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -316,28 +313,20 @@ p {
   color: var(--accent-txt-cl);
 }
 
-.logo-header {
-  margin-bottom: 20px;
-}
-
 .footer {
   background-color: var(--dark-bg-cl);
   padding: 60px 0;
 }
 
-.footer-container {
+.adress-link {
+  margin-top: 20px;
+}
+
+/*.footer-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.address {
-  font-style: normal;
-}
-
-.address-item:not(:last-child) {
-  padding-bottom: 10 px;
-}
+}*/
 
 .footer .link:hover,
 .footer .link:focus {
@@ -350,8 +339,16 @@ p {
   line-height: calc(24 / 14);
   color: var(--transparent-white-cl);
 }
-.contact .adres {
+.contact .address {
   color: var(--white-txt-cl);
+}
+
+.address-item {
+  margin-bottom: 9px;
+}
+
+.address-item:last-child {
+  margin-bottom: 0px;
 }
 
 .contact {
@@ -367,12 +364,10 @@ p {
 
 /*------------------портфоліо-фільтр--------------*/
 
-/*-----------------Портфоліо----------------*/
-
 .portfolio-button {
   display: flex;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -384,12 +379,15 @@ p {
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
-  background: var(--white-bg-cl);
-  border: 1px solid #eeeeee;
 }
 
 .picture {
   text-decoration: none;
+}
+
+.about-project {
+  padding: 20px 24px;
+  border: 1px solid var(--light1-cl);
 }
 
 .project-name {
@@ -397,6 +395,7 @@ p {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
+  margin-bottom: 4px;
 }
 
 .project-text {
@@ -422,7 +421,7 @@ p {
 .button {
   display: block;
   margin: 0 auto;
-  padding: 6px, 22px;
+  padding: 6px 22px;
 }
 
 .button:hover,
